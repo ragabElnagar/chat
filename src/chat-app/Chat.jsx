@@ -22,7 +22,7 @@ function Chat({ room }) {
       await addDoc(dbRef, {
         message,
         createdAt: serverTimestamp(),
-        user: auth.currentUser.displayName,
+        // user: auth.currentUser.displayName,
         room,
       });
       setMessage("");
@@ -53,7 +53,7 @@ function Chat({ room }) {
       <div className="messages">
         {messages.map((message) => (
           <div key={message.id} className="message">
-            <span className="user">{message.user}:</span> {message.message}
+             {message.message}
           </div>
         ))}
       </div>
