@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import AppRoot from './app-root/AppRoot';
+import Auth from './auth/Auth';
+import LoginWithGoogle from './auth/LoginWithGoogle';
+import ChatApp from './chat-app/ChatApp';
+import CRUD from './crud/CRUD';
+import UploadImage from './uploadImage/UploadImage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <CRUD/> */}
+     {/* <Auth/> */}
+     {/* <LoginWithGoogle/> */}
+     {/* <AppRoot/> */}
+     {/* <UploadImage/> */}
+     <ChatApp/>
     </div>
   );
 }
