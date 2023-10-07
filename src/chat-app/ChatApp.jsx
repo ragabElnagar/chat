@@ -17,14 +17,14 @@ function ChatApp(props) {
   };
   return (
     <div>
-      {/* {isAuth ? ( */}
+      {isAuth ? (
         <div>
           {room ? <Chat room={room} /> : <Room setRoom={setRoom} />}
-          {/* <button onClick={sinOut}>sin out</button> */}
+          <button onClick={sinOut}>sin out</button>
         </div>
-      {/* ) : (
+      ) : (
         <Login setIsAuth={setIsAuth} />
-      )} */}
+      )}
     </div>
   );
 }
